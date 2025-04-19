@@ -1,4 +1,4 @@
-const apiKey = ''; 
+const apiKey = 'f5d875e5742320af550f4d2c9b3bf8ed'; // oh noooo i left my key innnn
 
 const weatherIconElem = document.getElementById('weather-icon');
 const currentTempElem = document.getElementById('current-temp');
