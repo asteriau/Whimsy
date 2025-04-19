@@ -6,7 +6,7 @@ A minimal yet elegant and hackable start page for your browser, designed on a wh
 
 ![Preview](https://i.imgur.com/p9YR1FS.png)
 
-[Live Preview](whimsy-ruby.vercel.app)
+[Live Preview](https://whimsy-ruby.vercel.app)
 
 ## features
 
