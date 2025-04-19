@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>~/</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="gif">
+                <img src="assets/ganyu.gif" width="360px"/>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="head">
+                <p id="greeting">home</p>
+            </div>
+
+            <p id="clock"></p>
+
+            <div class="bookmarks">
+                <div class="category">
+                    <div class="links">
+                        <li class="title">daily</li>
+                        <li><a href="https://github.com/">GitHub</a></li>
+                        <li><a href="https://youtube.com/">YouTube</a></li>
+                        <li><a href="https://news.ycombinator.com">Hacker News</a></li>
+                        <li><a href="http://news.tuxmachines.org">Tux Machines</a></li>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title">reddit</li>
+                        <li><a href="https://old.reddit.com/r/linux">/r/linux</a></li>
+                        <li><a href="https://old.reddit.com/r/unixart">/r/unixart</a></li>
+                        <li><a href="https://old.reddit.com/r/unixporn">/r/unixporn</a></li>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title">utils</li>
+                        <li><a href="https://cobalt.tools">Cobalt</a></li>
+                        <li><a href="https://www.vanish.so/">Vanish</a></li>
+                        <li><a href="https://send.vis.ee">Send</a></li>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title">practice</li>
+                        <li><a href="https://www.hackerone.com/">HackerOne</a></li>
+                        <li><a href="https://leetcode.com/">LeetCode</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="weather-widget">
+        <div id="weather-main">
+            <span id="weather-icon"></span> 
+            <div id="weather-temp">
+                <span id="current-temp"></span>
+                <span id="temp-toggle">
+                    <span id="temp-celsius">°C</span> | <span id="temp-fahrenheit">°F</span>
+                </span>
+            </div>
+        </div>
+        <p id="error-message"></p>
+    </div>
+    
+    <script src="js/weather.js"></script>
+    <script src="js/greet.js"></script>    
+</body>
+
+</html>
