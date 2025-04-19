@@ -1,0 +1,24 @@
+# whimsy ✨
+
+A minimal yet elegant and hackable start page for your browser, designed on a whim.
+
+## preview
+
+![Preview](https://i.imgur.com/p9YR1FS.png)
+
+[Live Preview](caca)
+
+## features
+
+- Doesn't hurt your eyes (big plus).
+- Not cluttered (wowowowowow).
+- Uses the paradise theme (goated).
+- Customizable greeter.
+- Weather for whatever location you specify in `weather.js`. Comes with a Celsius / Fahrenheit toggle.
+
+## setup
+
+- grab a [openweathermap](https://openweathermap.org) api key for the weather and toss it in `weather.js`. Also specify the country code and city.
+- change your name for the greeter in `greet.js`.
+- optionally change the accent color or gif.
+- done.
