@@ -115,7 +115,6 @@ html, body {
 .title {
   font-size: var(--font-size-medium);
   color: var(--main-accent);
-  text-decoration: underline;
 }
 
 li {
