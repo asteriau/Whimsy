@@ -3,26 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>~/</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
+        <!-- Left Container: Displays the gif -->
         <div class="left-container">
             <div class="gif">
-                <img src="assets/ganyu.gif" width="360px"/>
+                <img src="assets/ganyu.gif" width="360px" alt="Ganyu GIF" />
             </div>
         </div>
 
+        <!-- Right Container: Includes greeting, clock, and bookmarks -->
         <div class="right-container">
+            <!-- Greeting Section -->
             <div class="head">
                 <p id="greeting">home</p>
             </div>
 
+            <!-- Clock Section -->
             <p id="clock"></p>
 
+            <!-- Bookmarks Section -->
             <div class="bookmarks">
+                <!-- Daily Bookmarks -->
                 <div class="category">
                     <div class="links">
                         <li class="title">daily</li>
@@ -33,6 +40,7 @@
                     </div>
                 </div>
 
+                <!-- Reddit Bookmarks -->
                 <div class="category">
                     <div class="links">
                         <li class="title">reddit</li>
@@ -42,6 +50,7 @@
                     </div>
                 </div>
 
+                <!-- Utility Bookmarks -->
                 <div class="category">
                     <div class="links">
                         <li class="title">utils</li>
@@ -51,6 +60,7 @@
                     </div>
                 </div>
 
+                <!-- Practice Bookmarks -->
                 <div class="category">
                     <div class="links">
                         <li class="title">practice</li>
@@ -62,6 +72,7 @@
         </div>
     </div>
 
+    <!-- Weather Widget -->
     <div id="weather-widget">
         <div id="weather-main">
             <span id="weather-icon"></span> 
@@ -74,9 +85,10 @@
         </div>
         <p id="error-message"></p>
     </div>
-    
+
+    <!-- JS Sourcing -->
     <script src="js/weather.js"></script>
-    <script src="js/greet.js"></script>    
+    <script src="js/greet.js"></script>
 </body>
 
 </html>

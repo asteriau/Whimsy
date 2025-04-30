@@ -6,19 +6,36 @@
 }
 
 :root {
+  /* Colors */
   --color-bg: #151515;
   --color-fg: #E8E3E3;
   --main-accent: #8DA3B9;
+  --color-border: #252525;
+  
+  /* Shadows */
   --text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.48), 0 1.5px 3px rgba(0, 0, 0, 0.21);
+  --box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37), 0 1.5px 3px rgba(0, 0, 0, 0.13);
+  
+  /* Layout */
   --max-width: 100%;
-  --transition-duration: 0.3s;
   --min-width-temp: 45px;
+  --transition-duration: 0.3s;
+  
+  /* Fonts */
+  --font-main: 'Product Sans', sans-serif;
+  --font-size-large: 40px;
+  --font-size-medium: 25px;
+  --font-size-small: 16px;
+  
+  /* Misc */
+  --temp-toggle-font-size: 14px;
+  --error-font-size: 12px;
 }
 
 html, body {
   background: var(--color-bg);
   color: var(--color-fg);
-  font-family: 'Product Sans', sans-serif;
+  font-family: var(--font-main);
   height: 100%; 
   width: 100%;
   margin: 0;
@@ -52,8 +69,11 @@ html, body {
 .gif img {
   max-width: var(--max-width);
   max-height: var(--max-width);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37), 0 1.5px 3px rgba(0, 0, 0, 0.13);
-  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  border-radius: 2px;
+  border: 0.5px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
 }
 
 .head, .title, #greeting, #clock {
@@ -64,7 +84,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 40px;
+  font-size: var(--font-size-large);
   padding-top: 20px;
 }
 
@@ -84,17 +104,22 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37), 0 1.5px 3px rgba(0, 0, 0, 0.13);
+  box-shadow: var(--box-shadow);
   min-height: 210px;
+  border-radius: 2px;
+  border: 0.5px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
 }
 
 .title {
-  font-size: 25px;
+  font-size: var(--font-size-medium);
   color: var(--main-accent);
+  text-decoration: underline;
 }
 
 li {
-  font-size: 16px;
+  font-size: var(--font-size-small);
   list-style-type: none;
   padding: 5px;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
@@ -135,9 +160,9 @@ a:hover::after {
 #weather-widget {
   position: absolute;
   top: 10px;
-  right:-100px;
+  right: -100px;
   color: var(--color-fg);
-  font-size: 16px;
+  font-size: var(--font-size-small);
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -174,7 +199,7 @@ a:hover::after {
 }
 
 #temp-toggle {
-  font-size: 14px;
+  font-size: var(--temp-toggle-font-size);
   color: var(--color-fg);
   cursor: pointer;
   margin-top: -12px;
@@ -199,20 +224,20 @@ a:hover::after {
 
 #error-message {
   color: var(--main-accent);
-  font-size: 12px;
+  font-size: var(--error-font-size);
   text-align: center;
   margin-top: 5px;
 }
 
 #right-container .head {
   text-align: center;
-  font-size: 36px;
+  font-size: var(--font-size-large);
   color: var(--color-fg);
   margin-top: 20px;
 }
 
 #greeting {
-  font-size: 40px;
+  font-size: var(--font-size-large);
   margin-bottom: 16px;
   color: var(--main-accent);
 }
