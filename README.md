@@ -20,5 +20,4 @@ A minimal yet elegant and hackable start page for your browser, designed on a wh
 
 - Grab a [openweathermap](https://openweathermap.org) api key for the weather and toss it in `weather.js`. Also specify the location.
 - Change your name for the greeter in `greet.js`.
-- Optionally change the accent color or gif.
 - Done.
