@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whimsy</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
+    <div class="rain-background" id="rainBackground"></div>
+    
     <div class="container">
-        <!-- Left Container: Displays the gif -->
         <div class="left-container">
             <div class="gif">
                 <img src="assets/ganyu.gif" width="360px" alt="Ganyu GIF" />
             </div>
         </div>
 
-        <!-- Right Container: Includes greeting, clock, and bookmarks -->
         <div class="right-container">
-            <!-- Greeting Section -->
             <div class="head">
                 <p id="greeting">home</p>
             </div>
 
-            <!-- Clock Section -->
             <p id="clock"></p>
 
-            <!-- Bookmarks Section -->
+            <div class="search-container">
+                <input type="text" class="search-bar" id="searchInput" placeholder="🔎   Where to buy pipebombs near me?">
+                <div class="search-engines">
+                    <button class="search-engine active" data-engine="google">Google</button>
+                    <button class="search-engine" data-engine="duckduckgo">DuckDuckGo</button>
+                    <button class="search-engine" data-engine="youtube">YouTube</button>
+                    <button class="search-engine" data-engine="github">GitHub</button>
+                </div>
+            </div>
+
             <div class="bookmarks">
-                <!-- Daily Bookmarks -->
                 <div class="category">
                     <div class="links">
                         <li class="title">daily</li>
@@ -40,7 +44,6 @@
                     </div>
                 </div>
 
-                <!-- Reddit Bookmarks -->
                 <div class="category">
                     <div class="links">
                         <li class="title">reddit</li>
@@ -50,7 +53,6 @@
                     </div>
                 </div>
 
-                <!-- Utility Bookmarks -->
                 <div class="category">
                     <div class="links">
                         <li class="title">utils</li>
@@ -60,7 +62,6 @@
                     </div>
                 </div>
 
-                <!-- Practice Bookmarks -->
                 <div class="category">
                     <div class="links">
                         <li class="title">practice</li>
@@ -72,7 +73,6 @@
         </div>
     </div>
 
-    <!-- Weather Widget -->
     <div id="weather-widget">
         <div id="weather-main">
             <span id="weather-icon"></span> 
@@ -86,9 +86,9 @@
         <p id="error-message"></p>
     </div>
 
-    <!-- JS Sourcing -->
     <script src="js/weather.js"></script>
     <script src="js/greet.js"></script>
+    <script src="js/rain.js"></script>
+    <script src="js/search.js"></script>
 </body>
-
 </html>

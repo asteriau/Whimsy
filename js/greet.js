@@ -1,4 +1,4 @@
-const userName = 'Laura'; // User's name
+const userName = 'Laura'; 
 
 // Main function to update the greeting and clock
 function updateClockAndGreeting() {
