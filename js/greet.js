@@ -9,9 +9,9 @@ function updateClockAndGreeting() {
     const { hours, minutes } = getTime(now); // Deconstructed to get hours and minutes
     const formattedTime = formatTime(hours, minutes); // Format the time
     
-    const { greeting, emoji } = getGreetingAndEmoji(hours); // Get appropriate greeting and emoji
+    const greeting = getGreeting(hours); // Get appropriate greeting
 
-    greetingElement.textContent = `${greeting}, ${userName}! ${emoji}`;
+    greetingElement.textContent = `${greeting}, ${userName}!`;
     clockElement.textContent = `It is currently ${formattedTime}.`;  
 }
 
@@ -30,14 +30,14 @@ function formatTime(hours, minutes) {
     return `${twelveHour}:${formattedMinutes} ${period}`;
 }
 
-// Function to determine the greeting message and emoji based on the time of day
-function getGreetingAndEmoji(hours) {
+// Function to determine the greeting message based on the time of day
+function getGreeting(hours) {
     if (hours < 12) {
-        return { greeting: 'Good morning', emoji: '🌅' }; 
+        return 'Good morning'; 
     } else if (hours < 18) {
-        return { greeting: 'Good afternoon', emoji: '☀️' }; 
+        return 'Good afternoon'; 
     } else {
-        return { greeting: 'Good evening', emoji: '🌙' }; 
+        return 'Good evening'; 
     }
 }
 
