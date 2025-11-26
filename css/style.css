@@ -171,6 +171,12 @@ html, body, input, button, select, textarea {
   font-family: var(--font-main);
 }
 
+.search-engine:hover {
+  outline: none;
+  border-color: var(--main-accent);
+  box-shadow: 0 0 0 2px rgba(141, 163, 185, 0.2);
+}
+
 .search-engine.active {
   background: var(--main-accent);
   color: var(--color-bg);
@@ -229,6 +235,7 @@ html, body, input, button, select, textarea {
   font-size: var(--font-size-medium);
   color: var(--main-accent);
   background: transparent;
+  text-decoration: underline 0.1px;
 }
 
 li {
