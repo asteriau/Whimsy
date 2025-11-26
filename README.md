@@ -1,8 +1,8 @@
-# whimsy ✨
+# Whimsy ✨
 
 A minimal yet elegant and hackable start page for your browser, designed on a whim.
 
-## preview
+## Preview
 
 ![Preview](https://i.imgur.com/AcuyKto.png)
 
