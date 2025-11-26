@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whimsy</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <div class="rain-background" id="rainBackground"></div>
-    
+
     <div class="container">
         <div class="left-container">
             <div class="gif">
@@ -24,12 +25,22 @@
             <p id="clock"></p>
 
             <div class="search-container">
-                <input type="text" class="search-bar" id="searchInput" placeholder="🔎   Where to buy pipebombs near me?">
+                <input 
+                    type="text" 
+                    class="search-bar" 
+                    id="searchInput" 
+                    placeholder="🔎   Where to buy pipebombs near me?"
+                >
                 <div class="search-engines">
-                    <button class="search-engine active" data-engine="google">Google</button>
-                    <button class="search-engine" data-engine="duckduckgo">DuckDuckGo</button>
-                    <button class="search-engine" data-engine="youtube">YouTube</button>
-                    <button class="search-engine" data-engine="github">GitHub</button>
+                    <button class="search-engine active" data-engine="google">
+                        <i class="fa-brands fa-google"></i> Google
+                    </button>
+                    <button class="search-engine" data-engine="youtube">
+                        <i class="fa-brands fa-youtube"></i> YouTube
+                    </button>
+                    <button class="search-engine" data-engine="github">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </button>
                 </div>
             </div>
 
@@ -73,8 +84,8 @@
                 <div class="category">
                     <div class="links">
                         <li class="title">Skyblock</li>
-                        <li><a href="https://sky.shiiyu.moe/">SkyCrypt</a></li>
-                        <li><a href="https://www.brandonfowler.me/skyblockah/?sort=cheap&bin=yes">AH Browser</a></li>
+                        <li><a href="https://github.com/">SkyCrypt</a></li>
+                        <li><a href="https://skyblock.finance">AH Browser</a></li>
                         <li><a href="https://skyblock.finance">Bazaar Tracker</a></li>
                     </div>
                 </div>
@@ -84,11 +95,12 @@
 
     <div id="weather-widget">
         <div id="weather-main">
-            <span id="weather-icon"></span> 
+            <span id="weather-icon"></span>
             <div id="weather-temp">
                 <span id="current-temp"></span>
                 <span id="temp-toggle">
-                    <span id="temp-celsius">°C</span> | <span id="temp-fahrenheit">°F</span>
+                    <span id="temp-celsius">°C</span> | 
+                    <span id="temp-fahrenheit">°F</span>
                 </span>
             </div>
         </div>
