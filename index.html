@@ -3,64 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asteria</title>
+    <title>Whimsy</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <div class="rain-background" id="rainBackground"></div>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">asteria</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">home</a></li>
-                <li><a href="#about" class="nav-link">about</a></li>
-                <li><a href="#projects" class="nav-link">projects</a></li>
-                <li><a href="#contact" class="nav-link">contact</a></li>
-            </ul>
+    <div class="container">
+        <div class="left-container">
+            <div class="gif">
+                <img src="assets/ganyu.gif" width="360px" alt="Ganyu GIF" />
+            </div>
         </div>
-    </nav>
 
-    <main class="main-content">
-        <section id="home" class="section">
-            <div class="home-container">
-                <h1 class="hero-title">hi, i'm asteria!</h1>
-                <p class="hero-summary">
-                    Welcome to my corner of the web. I'm a developer passionate about creating beautiful, functional digital experiences.
-                    This space is where I share my work, thoughts, and projects.
-                </p>
+        <div class="right-container">
+            <div class="head">
+                <p id="greeting">home</p>
             </div>
-        </section>
 
-        <section id="about" class="section">
-            <div class="section-content">
-                <h2 class="section-title">about</h2>
-                <p>Coming soon...</p>
+            <p id="clock"></p>
+
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    class="search-bar" 
+                    id="searchInput" 
+                    placeholder="🔎   Where to buy pipebombs near me?"
+                >
+                <div class="search-engines">
+                    <button class="search-engine active" data-engine="google">
+                        <i class="fa-brands fa-google"></i> Google
+                    </button>
+                    <button class="search-engine" data-engine="youtube">
+                        <i class="fa-brands fa-youtube"></i> YouTube
+                    </button>
+                    <button class="search-engine" data-engine="github">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </button>
+                </div>
             </div>
-        </section>
 
-        <section id="projects" class="section">
-            <div class="section-content">
-                <h2 class="section-title">projects</h2>
-                <p>Coming soon...</p>
+            <div class="bookmarks">
+                <div class="category">
+                    <div class="links">
+                        <li class="title">Daily</li>
+                        <li><a href="https://github.com/">GitHub</a></li>
+                        <li><a href="https://youtube.com/">YouTube</a></li>
+                        <li><a href="https://news.ycombinator.com">Hacker News</a></li>
+                        <li><a href="http://news.tuxmachines.org">Tux Machines</a></li>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title">Reddit</li>
+                        <li><a href="https://old.reddit.com/r/linux">/r/linux</a></li>
+                        <li><a href="https://old.reddit.com/r/unixart">/r/unixart</a></li>
+                        <li><a href="https://old.reddit.com/r/unixporn">/r/unixporn</a></li>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title">Utils</li>
+                        <li><a href="https://send.vis.ee">Send</a></li>
+                        <li><a href="https://cobalt.tools">Cobalt</a></li>
+                        <li><a href="https://www.vanish.so/">Vanish</a></li>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title">Practice</li>
+                        <li><a href="https://leetcode.com/">LeetCode</a></li>
+                        <li><a href="https://www.hackerone.com/">HackerOne</a></li>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title">Skyblock</li>
+                        <li><a href="https://sky.shiiyu.moe/">SkyCrypt</a></li>
+                        <li><a href="https://www.brandonfowler.me/skyblockah/?sort=cheap&bin=yes">AH Browser</a></li>
+                        <li><a href="https://skyblock.finance">Bazaar Tracker</a></li>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </div>
 
-        <section id="contact" class="section">
-            <div class="section-content">
-                <h2 class="section-title">contact</h2>
-                <p>Coming soon...</p>
+    <div id="weather-widget">
+        <div id="weather-main">
+            <span id="weather-icon"></span>
+            <div id="weather-temp">
+                <span id="current-temp"></span>
+                <span id="temp-toggle">
+                    <span id="temp-celsius">°C</span> | 
+                    <span id="temp-fahrenheit">°F</span>
+                </span>
             </div>
-        </section>
-    </main>
+        </div>
+        <p id="error-message"></p>
+    </div>
 
-    <footer class="footer">
-        <p>Made with <span class="heart">❤</span> by Samara M, © 2025</p>
-        <p>Site licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener noreferrer">GPL v3</a> • <a href="#" class="source-link">Site Source</a></p>
-    </footer>
-
+    <script src="js/weather.js"></script>
+    <script src="js/greet.js"></script>
     <script src="js/rain.js"></script>
-    <script src="js/navigation.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>
